@@ -66,17 +66,17 @@ function Sidebar() {
     }
     return (
         <>
-            <h2>Available rooms</h2>
+            <h2 style={{color: '#fff'}}>Available rooms</h2>
             <ListGroup>
                 {rooms.map((room, idx) => (
-                    <ListGroup.Item key={idx} onClick={() => joinRoom(room)} active={room == currentRoom} style={{ cursor: "pointer", display: "flex", justifyContent: "space-between" }}>
+                    <ListGroup.Item key={idx} onClick={() => joinRoom(room)} active={room === currentRoom} style={{ cursor: "pointer", display: "flex", justifyContent: "space-between",borderRadius:"100px",marginBottom:'2px'}}>
                         {room} {currentRoom !== room && <span className="badge rounded-pill bg-primary">{user.newMessages[room]}</span>}
                     </ListGroup.Item>
                 ))}
             </ListGroup>
-            <h2>Members</h2>
+            <h2 style={{color: '#fff'}}>Members</h2>
             {members.map((member) => (
-                <ListGroup.Item key={member.id} style={{ cursor: "pointer" }} active={privateMemberMsg?._id == member?._id} onClick={() => handlePrivateMemberMsg(member)} disabled={member._id === user._id}>
+                <ListGroup.Item key={member.id} style={{ cursor: "pointer", color: '#fff' }} active={privateMemberMsg?._id === member?._id} onClick={() => handlePrivateMemberMsg(member)} disabled={member._id === user._id}>
                     <Row>
                         <Col xs={2} className="member-status">
                             <img src={member.picture} className="member-status-img" alt=''/>
