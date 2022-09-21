@@ -1,5 +1,5 @@
 .home__bg {
-    background-image: url(https://global-uploads.webflow.com/5e157548d6f7910beea4e2d6/62a07b53139aec4c1fd07771_discord-logo.png);
+    background-image: url(https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
     height: 92vh;
     background-position: center;
     background-size: 950px;
@@ -14,5 +14,5 @@
     
 }
 .d-flex {
-    color: #fff;
+    color: black;
 }
