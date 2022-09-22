@@ -29,11 +29,11 @@ function Signup() {
   async function uploadImage() {
     const data = new FormData();
     data.append("file", image);
-    data.append("upload_preset", "etr8jviq");
+    data.append("upload_preset", `${process.env.REACT_APP_CODE}`);
     try {
       setUploadingImg(true);
       let res = await fetch(
-        "https://api.cloudinary.com/v1_1/dvxzu8a3w/image/upload",
+        `${process.env.REACT_APP_IMAGE}`,
         {
           method: "post",
           body: data,

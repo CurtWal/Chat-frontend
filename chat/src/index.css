@@ -13,6 +13,7 @@ body {
 [data-theme="dark"]{
   background-color: #36393f;
   color: #fff
+  
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
